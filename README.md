@@ -16,6 +16,7 @@ GroupByKey é menos eficiente que reduceByKey em grandes dataset. Por quê?
 Isso acontece porque reduceByKey combina a saída com uma chave comum em cada partição antes de fazer o “shuffle” nos dados.
 
 Explique o que o código Scala abaixo faz.
+
 val textFile = sc . textFile ( "hdfs://..." )
 
 val counts = textFile . flatMap ( line => line . split ( " " ))
