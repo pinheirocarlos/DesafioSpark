@@ -34,13 +34,19 @@ Responda as seguintes questões devem ser desenvolvidas em Spark utilizando a su
 
 Arquivo utilizado: NASA_access_log_Jul95
 
+
+
 1. Número de hosts únicos.
 
 81.982
 
+
+
 2. O total de erros 404.
 
 10845
+
+
 
 3. Os 5 URLs que mais causaram erro 404.
 
@@ -53,6 +59,8 @@ Arquivo utilizado: NASA_access_log_Jul95
  /shuttle/resources/orbiters/atlantis.gif    230
  
  /history/apollo/a-001/a-001-patch-small.gif 230
+
+
 
 
 4. Quantidade de erros 404 por dia.
@@ -112,6 +120,8 @@ Arquivo utilizado: NASA_access_log_Jul95
 22/Jul/1995  180
 
 28/Jul/1995  93
+
+
 
 5. O total de bytes retornados.
 38.695.973.491
