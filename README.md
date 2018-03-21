@@ -40,9 +40,13 @@ Arquivo utilizado: NASA_access_log_Jul95
 3. Os 5 URLs que mais causaram erro 404.
 
  /pub/winvn/readme.txt                       667
+ 
  /pub/winvn/release.txt                      547
+ 
  /history/apollo/apollo-13.html              286
+ 
  /shuttle/resources/orbiters/atlantis.gif    230
+ 
  /history/apollo/a-001/a-001-patch-small.gif 230
 
 
