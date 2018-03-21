@@ -17,10 +17,15 @@ Isso acontece porque reduceByKey combina a saída com uma chave comum em cada pa
 
 Explique o que o código Scala abaixo faz.
 val textFile = sc . textFile ( "hdfs://..." )
+
 val counts = textFile . flatMap ( line => line . split ( " " ))
+
 . map ( word => ( word , 1 ))
+
 . reduceByKey ( _ + _ )
+
 counts . saveAsTextFile ( "hdfs://..." )
+
 
 Trata-se de um Contador de palavras distintas que busca o arquivo no HDFS e ao final, salva um novo arquivo no HDFS.
 
@@ -53,32 +58,59 @@ Arquivo utilizado: NASA_access_log_Jul95
 4. Quantidade de erros 404 por dia.
  
 19/Jul/1995  636
+
 06/Jul/1995  629
+
 07/Jul/1995  564
+
 13/Jul/1995  524
+
 05/Jul/1995  491
+
 03/Jul/1995  473
+
 11/Jul/1995  468
+
 18/Jul/1995  463
+
 12/Jul/1995  459
+
 25/Jul/1995  457
+
 20/Jul/1995  426
+
 14/Jul/1995  406
+
 17/Jul/1995  403
+
 10/Jul/1995  390
+
 04/Jul/1995  355
+
 09/Jul/1995  341
+
 27/Jul/1995  334
+
 21/Jul/1995  332
+
 24/Jul/1995  324
+
 26/Jul/1995  319
+
 01/Jul/1995  314
+
 08/Jul/1995  299
+
 02/Jul/1995  289
+
 16/Jul/1995  255
+
 15/Jul/1995  252
+
 23/Jul/1995  230
+
 22/Jul/1995  180
+
 28/Jul/1995  93
 
 5. O total de bytes retornados.
