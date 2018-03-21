@@ -1,18 +1,23 @@
 # DesafioSpark
 
 Qual o objetivo do comando cache em Spark?
+
 O comando cache() é responsável por enviar um dataset para ser trabalhado em memória.
 
 O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em MapReduce. Por quê?
+
 Spark faz uso da memória, sendo mais rápido em seu processamento, diferentemente do MapReduce, que utiliza motores de busca baseados em disco.
 
 Qual é a função do SparkContext ?
+
 Representa a conexão para um cluster Spark e pode ser utilizado para criação de RDDs no cluster.
 
 Explique com suas palavras o que é Resilient Distributed Datasets (RDD).
+
 Trata-se de um dos principais objetos do modelo de programação Spark, pois possui o mecanismo para processamento dos dados de forma distribuída.
 
 GroupByKey é menos eficiente que reduceByKey em grandes dataset. Por quê?
+
 Isso acontece porque reduceByKey combina a saída com uma chave comum em cada partição antes de fazer o “shuffle” nos dados.
 
 Explique o que o código Scala abaixo faz.
